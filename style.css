@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Halvar, sans-serif;
+    font-weight: 600;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    color: #fff;
+}
+
+.banner-wrapp {
+    margin: 0 auto;
+    padding: 40px;
+    max-width: 1280px ;
+    display: flex;
+    justify-content: center;
+}
+
+.banner {
+    height: auto;
+    position: relative;
+    display: flex;
+}
+
+.banner .mask-block {
+    position: relative; 
+    overflow: hidden; 
+    display: flex;
+    align-items: center; 
+    height: 25px;
+    width: 100%;
+}
+
+.banner .mask-block .video-background {
+    max-width: 480px;
+    object-fit: cover; 
+    position: relative; 
+    top: 0;
+    right: 0; 
+}
+
+.banner .row:nth-child(1) .mask-block {
+    width: 120px; /* Ширина блока */
+}
+
+.banner .row:nth-child(1) .mask-block .video-background {
+    top: 0; /* Первое видео на верхнем уровне */
+}
+
+.banner .row:nth-child(2) .mask-block {
+    width: 75px; /* Ширина блока */
+}
+
+.banner .row:nth-child(2) .mask-block .video-background {
+    top: 20px; /* Смещение вниз для второго видео */
+}
+
+.banner .row:nth-child(3) .mask-block {
+    width: 100px; /* Ширина блока */
+}
+
+.banner .row:nth-child(3) .mask-block .video-background {
+    top: 40px; /* Смещение вниз для третьего видео */
+}
+
+.banner .row:nth-child(4) .mask-block {
+    width: 100%; /* Полная ширина блока */
+}
+
+.banner .row:nth-child(4) .mask-block .video-background {
+    top: 60px; /* Смещение вниз для четвертого видео */
+}
+
+.banner span {
+    font-size: calc(1rem + 2vw);
+}
+
+.banner .column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.banner .row {
+    display: flex; 
+    align-items: center;
+    gap: 15px;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+    line-height: 1;
+}
